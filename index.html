@@ -344,7 +344,7 @@ footer{color:var(--muted);font-size:.8rem;border-top:1px solid var(--line);paddi
   document.querySelectorAll(".speed button").forEach(b=>b.onclick=()=>{ speed=+b.dataset.s; document.querySelectorAll(".speed button").forEach(x=>x.setAttribute("aria-pressed",String(x===b))); });
 
   const d=new Date(R.summary.run_at).toLocaleString("en-IN",{timeZone:"Asia/Kolkata",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
-  document.getElementById("foot").textContent=`Recorded replay · ${d} IST · GPT-4.1-mini via Straive LLM Foundry · ${R.summary.calls} model calls · about ₹${(R.summary.cost*100).toFixed(1)} · synthetic data and fictional clients. The Gate is code; agent responses use the model. Three scripted probes tested; not a complete security assessment.`;
+  document.getElementById("foot").textContent=`Recorded replay · ${d} IST · GPT-4.1-mini via LLM Foundry · ${R.summary.calls} model calls · about ₹${(R.summary.cost*100).toFixed(1)} · synthetic data and fictional clients. The Gate is code; agent responses use the model. Three scripted probes tested; not a complete security assessment.`;
   restart();
 })();
 </script>
